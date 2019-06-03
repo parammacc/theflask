@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hola Mundo'
+    return 'hola mundo.'
     
-app.run()
+#al parecer en environments no funciona el modo debug
+app.run(debug = True, port=10000)
